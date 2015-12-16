@@ -4,7 +4,7 @@ module Refinery
       translates :title, :body, :slug
       extend FriendlyId
 
-      acts_as_indexed :fields => [:title, :body]
+      #acts_as_indexed :fields => [:title, :body]
       acts_as_nested_set :dependent => :destroy
 
       friendly_id :friendly_id_source, use: :globalize
