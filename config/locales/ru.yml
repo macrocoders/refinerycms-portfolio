@@ -1,0 +1,61 @@
+en:
+  refinery:
+    plugins:
+      refinerycms_portfolio:
+        title: Портфолио
+    portfolio:
+      admin:
+        items:
+          item:
+            gallery: Галерея
+            gallery_help: Добавить изображение в галерею
+            delete: Удалить изображение из галереи
+            edit: Редактировать изображение
+            view_live_html: Посмотреть изображение в галерее
+          actions:
+            back_to_galleries: Вернуться к списку галерей
+            create_new: Добавить новое изображение
+            reorder: Сортировать изображения
+            reorder_done: Закончить сортировку
+          index:
+            no_items_yet: Изображения не найдены.
+            sorry_no_results: К сожалению, записи не найдены.
+            title: Изображения
+        galleries:
+          unlink_image: Unlink this image
+          actions:
+            add_image: Добавить изображение
+            create_new: Добавить новую галарею
+            reorder: Сортировать галереи
+            reorder_done: Завершить сортировку
+            view_root_images: Посмотреть изображения верхнего уровня
+          records:
+            title: Галереи
+            sorry_no_results: К сожалению, записи не найдены.
+            no_items_yet: Не найдено ни одной галереи. Нажми "Добавить галерею", чтобы создать первую.
+          gallery:
+            add_image: Добавить изображение в галерею
+            delete: Удалить галарею навсегда
+            edit: Редактировать галарею
+            item_count:
+              zero: Нет изображений
+              one: 1 изображение
+              other: '%{count} изображений'
+            new_child: Добавить новую дочернюю галерею.
+            view_live_html: Посмотреть галерею <br/><em>(открыть в новом окне)</em>
+          form:
+            parent_gallery: Родительская галерея
+            parent_gallery_help: You can nest a gallery inside another gallery, creating a multiple-level portfolio. Choose a gallery to make this gallery the child of the one you select, or leave it blank to keep it as a top-level gallery.
+            cover_image: Обложка
+            cover_image_help: Изображение используется в качестве обложки.
+            images: Изображения
+          image_fields:
+            add_new_image: Добавить изображение
+      galleries:
+        show:
+          other: Другие галереи
+  activerecord:
+    attributes:
+      'refinery/portfolio/gallery':
+        title: Заголовок
+        body: Контент
